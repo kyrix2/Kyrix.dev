@@ -34,8 +34,8 @@
         </div>
       </div>
       <ul class="nav-items flex flex-row">
-        <a href=""><li class="nav-link inline-block text-white mr-5">ABOUT ME</li></a>
-        <a href=""><li class="nav-link inline-block text-white mr-5">PORTFOLIO</li></a>
+        <a href="#Aboutme"><li class="nav-link inline-block text-white mr-5">ABOUT ME</li></a>
+        <a href="#Portfolio"><li class="nav-link inline-block text-white mr-5">PORTFOLIO</li></a>
         <a href=""><li class="nav-link inline-block yellow">CONTACT ME</li></a>
       </ul>
     </nav>
@@ -55,40 +55,160 @@
         </div>
     </section>
     <section class="right-svg m-auto">
-      <img src="/img/computer-work-5.png" class="svg w-100 w-full" alt="Main Pic">
+      <img src="/img/computer-work-5.png" class="svg w-100 w-full hidden lg:block" alt="Main Pic">
     </section>
   </main>
   <div class="mt-16">
     <p class="aka grey text-center p-0">Scroll<br/>Down</p>
     <img src="img/scroll-icon.png" class="w-14 m-auto animate-bounce mt-5">
   </div>
-<section class="container mx-auto my-24">
-  <p class="title text-left text-6xl">
+<section class="container mx-auto my-24" id="#Aboutme">
+  <p class="title text-center text-6xl">
     About Me<span class="yellow">.</span>
   </p>
-  <div class="lg:grid grid-cols-2">
-    <blockquote >
-    <p class="mt-10 text-left text-xl px-2 font-medium">
+  <div class="lg:grid grid-cols-0">
+    <blockquote class="m-auto p-2 lg:w-2/4 lg:p-0 ">
+    <p class="mt-10 text-center text-xl px-2 font-medium">
       “ I am <span class="font-bold yellow ">Oussama Kefi</span> aka Kyrix, I'm company owner , <span class="font-bold yellow">Web Developer & Designer</span>, I have over 3 years experience deloying , designing and coding websites for diffrent bussiness.
       In addition I am expending my knowleadge to be a Full-Stuck.”
     </p>
     </blockquote>
-    <div class="">
-      <div id="carousel">
-        <figure><img src="http://lorempixel.com/186/116/nature/1" alt=""></figure>
-        <figure><img src="http://lorempixel.com/186/116/nature/2" alt=""></figure>
-        <figure><img src="http://lorempixel.com/186/116/nature/3" alt=""></figure>
-        <figure><img src="http://lorempixel.com/186/116/nature/4" alt=""></figure>
-        <figure><img src="http://lorempixel.com/186/116/nature/5" alt=""></figure>
-        <figure><img src="http://lorempixel.com/186/116/nature/6" alt=""></figure>
-        <figure><img src="http://lorempixel.com/186/116/nature/7" alt=""></figure>
-        <figure><img src="http://lorempixel.com/186/116/nature/8" alt=""></figure>
-        <figure><img src="http://lorempixel.com/186/116/people/9" alt=""></figure>
+    <div class="flex flex-row justify-center mt-6">
+      <h2 class="aka grey">Languages</h2>
+      <div class="flex-col">
+        <div class="lang orb html">
+          <p class="text-center py-2 font-medium">Html</p>
+        </div>
+      </div>
+      <div class="flex-col">
+        <div class="lang orb Javascript">
+          <p class="text-center py-2 font-medium">Javascript</p>
+        </div>
+      </div>
+      <div class="flex-col">
+        <div class="lang orb css">
+          <p class="text-center py-2 font-medium">CSS</p>
+        </div>
+      </div>
+      <div class="flex-col">
+        <div class="lang orb python">
+          <p class="text-center py-2 font-medium">Python</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row justify-center mt-16">
+      <h2 class="aka grey">Framworks</h2>
+      <div class="flex-col">
+        <div class="lang orb tcss">
+          <p class="text-center py-2 font-medium">TailwindCss</p>
+        </div>
+      </div>
+      <div class="flex-col">
+        <div class="lang orb reactjs">
+          <p class="text-center py-2 font-medium">React Js</p>
+        </div>
+      </div>
+      <div class="flex-col">
+        <div class="lang orb bootstrap">
+          <p class="text-center py-2 font-medium">Bootstrap</p>
+        </div>
+      </div>
+      <div class="flex-col">
+        <div class="lang orb vuejs">
+          <p class="text-center py-2 font-medium">VueJs</p>
+        </div>
       </div>
     </div>
    </div>
   </div>
-  
+  <a href=""><p class="text-center mt-16 fontname greeny">You can check my full resume.</p></a>
+</section>
+
+<section class="container mx-auto my-24" id="#Portfolio">
+  <p class="title text-center text-6xl">
+    Portfolio<span class="yellow">.</span>
+  </p>
+  <p class="text-center text-xl mb-16">You can check all previous works</p>
+  <div class="lg:grid lg:grid-cols-3 lg:gap-4 block px-3 lg:p-0">
+    <a href="https://wizardnode.com/">
+      <div class="wizard rounded-md m-3">
+        <div class="relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t from-gray-600	">
+          <h2 class="text-sm font-medium text-white">WizardNode LLC</h2>
+          <h2 class="text-xl font-semibold text-white pt-2">
+            <img src="/img/html5.png" class="rounded-md w-8 inline-block">
+            <img src="/img/css.png" class="rounded-full w-8 inline-block">
+            <img src="/img/js.png" class="rounded-full w-8 inline-block">
+            <img src="/img/php.jpg" class="rounded-full w-8 inline-block">
+            <img src="/img/bootstrap.png" class="rounded-full w-8 inline-block">     
+          </h2>
+        </div>
+      </div>
+    </a>
+    <!-- . --->
+    <a href="https://www.freshkeys.vip/">
+      <div class="freshkey rounded-md m-3">
+        <div class="relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t from-gray-600	">
+          <h2 class="text-sm font-medium text-white">FreshKeys.VIP</h2>
+          <h2 class="text-xl font-semibold text-white pt-2">
+            <img src="/img/reactjs.png" class="rounded-full w-8 inline-block">
+            <img src="https://www.drupal.org/files/styles/grid-3-2x/public/project-images/screenshot_361.png" class="rounded-full w-8 inline-block">
+          </h2>
+        </div>
+      </div>
+    </a>
+    <!-- . --->
+    <a href="/zerobyte/index.html">
+      <div class="zerobyte rounded-md m-3">
+        <div class="relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t from-gray-600	">
+          <h2 class="text-sm font-medium text-white">Zerobyte Esport</h2>
+          <h2 class="text-xl font-semibold text-white pt-2">
+            <img src="/img/html5.png" class="rounded-md w-8 inline-block">
+            <img src="/img/css.png" class="rounded-full w-8 inline-block">
+            <img src="/img/bootstrap.png" class="rounded-full w-8 inline-block">
+          </h2>
+        </div>
+      </div>
+    </a>
+    <!-- Row 2 --->
+    <a href="/EmpireDesign/index.html">
+      <div class="empiredzn rounded-md m-3">
+        <div class="relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t from-gray-600	">
+          <h2 class="text-sm font-medium text-white">Empire Design</h2>
+          <h2 class="text-xl font-semibold text-white pt-2">
+            <img src="/img/html5.png" class="rounded-md w-8 inline-block">
+            <img src="/img/css.png" class="rounded-full w-8 inline-block">
+            <img src="/img/bootstrap.png" class="rounded-full w-8 inline-block">
+            <img src="/img/js.png" class="rounded-full w-8 inline-block">
+          </h2>
+        </div>
+      </div>
+    </a>
+    <!-- . --->
+    <div class="freshkey rounded-md m-3">
+      <div class="relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t from-gray-600	">
+        <h2 class="text-sm font-medium text-white">FreshKeys.VIP</h2>
+        <h2 class="text-xl font-semibold text-white pt-2">
+          <img src="/img/reactjs.png" class="rounded-full w-8 inline-block">
+          <img src="https://www.drupal.org/files/styles/grid-3-2x/public/project-images/screenshot_361.png" class="rounded-full w-8 inline-block">
+        </h2>
+      </div>
+    </div>
+    <!-- . --->
+    <a href="https://immortalnode.com/">
+      <div class="immortal rounded-md m-3">
+        <div class="relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t from-gray-600	">
+          <h2 class="text-sm font-medium text-white">ImmortalNode LLC</h2>
+          <h2 class="text-xl font-semibold text-white pt-2">
+            <img src="/img/html5.png" class="rounded-md w-8 inline-block">
+            <img src="/img/css.png" class="rounded-full w-8 inline-block">
+            <img src="/img/php.jpg" class="rounded-full w-8 inline-block">
+            <img src="/img/bootstrap.png" class="rounded-full w-8 inline-block">
+          </h2>
+        </div>
+      </div>
+    </a>
+  </div>
+  <h2 class="aka text-center grey mt-10">And more little ones...</h2>
 </section>
 </body>
 </html>

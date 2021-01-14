@@ -60,64 +60,104 @@ a:hover{
     font-weight: bold;
     letter-spacing: 0.7em;
 }
-.rotate{
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(-90deg);
-    width: fit-content;
-    margin-left: 8rem;
+.orb {
+    width: 50px;
+    height: 50px;
+    background: #999;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0 24.7px;
+    float: left;
+    transition: all .2s ease-out;
+  }
+  
+  .orb:hover {
+    transform: scale(1.2);
+    opacity: .5;
+    cursor: pointer;
+  }
+  .orb p{
+    margin: 45px -13px;
+  }
+  
+  .html {
+      background:url('/img/html5.png');
+      background-size: cover;
+    }
+  .css {
+      background:url('/img/css.png');
+      background-size: cover;
+    }
+    .tcss {
+        background:url('https://www.drupal.org/files/styles/grid-3-2x/public/project-images/screenshot_361.png');
+        background-size: cover;
+      }
+    .vuejs {
+        background:url('/img/vuejs.png');
+        background-size: cover;
+      }
+  .Javascript {
+      background:url("/img/js.png");
+      background-size: cover;
+    }
+  .reactjs {
+    background:url("/img/reactjs.png");
+    background-size: cover;
+  }
+  .python {
+    background:url("https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png");
+    background-size: cover;
+  }
+  .bootstrap {
+    background:url("/img/bootstrap.png");
+    background-size: cover;
+  }
+  .green {background:green;}
+  
+  .marquee {
+    height: 200px;
+    width: 800px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .marquee--inner {
+    display: block;
+    width: 200%;
+    margin: 70px 0;
+    position: absolute;
+    animation: marquee 20s linear infinite;
+  }
+  
+  .marquee--inner:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+.wizard{
+  background: url('/img/wizard.png');
+  background-size: cover;
 }
-
-#carousel{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	transform-style: preserve-3d;
-	animation: rotation 20s infinite linear;
+.freshkey{
+  background: url('/img/freshkey.png');
+  background-size: cover;
 }
-#carousel:hover{
-	animation-play-state: paused;
+.zerobyte{
+  background: url('/img/zerobyte.png');
+  background-size: cover;
 }
-#carousel figure{
-	display: block;
-	position: absolute;
-	width: 186px;
-	height: 116px;
-	left: 10px;
-	top: 10px;
-	background: black;
-	overflow: hidden;
-	border: solid 5px black;
+.empiredzn{
+  background: url('/img/empiredzn.png');
+  background-size: cover;
 }
-#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
-#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
-#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
-#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
-#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
-#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
-#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
-#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
-#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
-
-img{
-	-webkit-filter: grayscale(1);
-	cursor: pointer;
-	transition: all .5s ease;
+.immortal{
+  background: url('/img/immortal.png');
+  background-size: cover;
 }
-img:hover{
-	-webkit-filter: grayscale(0);
-  transform: scale(1.2,1.2);
-}
-
-@keyframes rotation{
-	from{
-		transform: rotateY(0deg);
-	}
-	to{
-		transform: rotateY(360deg);
-	}
-}
-
 @media (max-width:400px){
     .navbar{
         flex-direction: row;
