@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Calculatrice en JavaScript</title>
+  </head>
+  <body>
+    <main class="mt-2">
+        <h1 class="text-center mb-5">Calculatrice en JavaScript</h1>
+        <form class="text-center">
+            <p class="fw-bold fs-5">Calcul de deux nombre:</p>
+            1er nombre :
+            <input type="text" id="firstNumber" class="input"/><br>
+            2nd nombre :
+            <input type="text" id="secondNumber" class="input"/><br>
+
+            <input type="button" onClick="somme()" Value="+" class="mt-5 btn border text-white fw-bold"/>
+            <input type="button" onClick="moin()" Value="-" class="mt-5 btn border text-white fw-bold"/>
+            <input type="button" onClick="foix()" Value="*" class="mt-5 btn border text-white fw-bold"/>
+            <input type="button" onClick="sur()" Value="/" class="mt-5 btn border text-white fw-bold"/>
+        </form>
+        <p class="text-center mt-4"> résultat   : <br>
+            <span id = "result"></span>
+        </p>
+    </main>
+
+    <script src="calculatrice.js"></script>
+  </body>
+</html>
